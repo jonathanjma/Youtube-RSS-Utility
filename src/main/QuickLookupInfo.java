@@ -10,16 +10,10 @@ public class QuickLookupInfo {
     public static ArrayList<String[]> getQuickLookupInfo() {
         channelInfo = new ArrayList<>();
 
-        storeChannel("Typical Gamer", "UC2wKfjlioOCLP4xQMOWNcgg");
-        storeChannel("TG Plays", "UCqVCSWnuOSPm26orvNDTuWQ");
-        storeChannel("Samara Redway Games", "UCQ7ZcQSfCiY0EJL8ZdbZ3Hw");
         storeChannel("Samara Redway", "UCLdXZU1bFk-BzztF7i6WvSw");
-        storeChannel("AzzyLand", "UCzeB_0FNcPIyUSjL_TL5lEw");
         storeChannel("RealLifeLore", "UCP5tjEmvPItGyLhmjdwP7Ww");
         storeChannel("Wendover Productions", "UC9RM-iSvTu1uPJb8X5yp3EQ");
         storeChannel("Half as Interesting", "UCuCkxoKLYO_EQ2GeFtbM_bw");
-        storeChannel("Real Engineering", "UCR1IuLEqb6UEA_zQ81kwXfg");
-        storeChannel("PolyMatter", "UCgNg3vwj3xt7QOrcIDaHdFg");
         storeChannel("Kurzgesagt – In a Nutshell", "UCsXVk37bltHxD1rDPwtNM8Q");
         storeChannel("Practical Engineering", "UCMOqf8ab-42UUQIdVoKwjlQ");
         storeChannel("Swiss001", "UCYiaHzwtsww6phfxwUtZv8w");
@@ -28,8 +22,9 @@ public class QuickLookupInfo {
         storeChannel("Wadzee", "UCRlEFn0L2G_DktbyvN0AZ5A");
         storeChannel("Mumbo Jumbo", "UChFur_NwVSbUozOcF_F2kMg");
         storeChannel("Grian", "UCR9Gcq0CMm6YgTzsDxAxjOQ");
+        storeChannel("Fundy", "UCCE5NVlm0FhbunMMBT48WAw");
         storeChannel("xisumavoid", "UCU9pX8hKcrx06XfOB-VQLdw");
-        storeChannel("CNBC", "UCvJJ_dzjViJCoLf5uKUTwoA");
+        storeChannel("JerryRigEverything", "UCWFKCr40YwOZQx8FHU_ZqqQ");
         storeChannel("Marques Brownlee", "UCBJycsmduvYEL83R_U4JriQ");
         storeChannel("How Ridiculous", "UC5f5IV0Bf79YLp_p9nfInRA");
         storeChannel("Stuff Made Here", "UCj1VqrHhDte54oLgPG4xpuQ");

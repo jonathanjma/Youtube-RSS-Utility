@@ -1,19 +1,22 @@
 package main;
 
-import org.jdom2.Document;
-import org.jdom2.Element;
-import org.jdom2.JDOMException;
-import org.jdom2.input.SAXBuilder;
-import org.jsoup.Jsoup;
-import org.jsoup.select.Elements;
-
-import java.io.*;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.net.URL;
 import java.nio.channels.Channels;
 import java.nio.channels.ReadableByteChannel;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.jdom2.Document;
+import org.jdom2.Element;
+import org.jdom2.JDOMException;
+import org.jdom2.input.SAXBuilder;
+import org.jsoup.Jsoup;
+import org.jsoup.select.Elements;
 
 public class ResUtil {
 
@@ -53,14 +56,14 @@ public class ResUtil {
 
         try {
             File inputFile = new File(filePath);
-            SAXBuilder saxBuilder = new SAXBuilder();
-            Document document = saxBuilder.build(inputFile);
+            Document document = new SAXBuilder().build(inputFile);
 
             Element rootElement = document.getRootElement();
             List<Element> allElementList = rootElement.getChildren(); // all elements in xml file
 
             // basic channel info
-            channel.setChannelId(allElementList.get(2).getText());
+            // channel.setChannelId(allElementList.get(2).getText());
+            channel.setChannelId(inputFile.getName().substring(0, inputFile.getName().length()-4));
             channel.setChannelName(allElementList.get(3).getText());
 
             for (int e = 7; e < allElementList.size(); e++) {
@@ -102,13 +105,13 @@ public class ResUtil {
 
         try {
             File inputFile = new File(filePath);
-            SAXBuilder saxBuilder = new SAXBuilder();
-            Document document  = saxBuilder.build(inputFile);
+            Document document  = new SAXBuilder().build(inputFile);
 
             Element rootElement = document.getRootElement();
             List<Element> elementList = rootElement.getChildren();
 
-            channel.setChannelId(elementList.get(2).getText());
+            // channel.setChannelId(elementList.get(2).getText());
+            channel.setChannelId(inputFile.getName().substring(0, inputFile.getName().length()-4));
             channel.setChannelName(elementList.get(3).getText());
 
             Video video = new Video();

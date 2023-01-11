@@ -112,7 +112,7 @@ public class YTUtilityApp extends Application {
 
             channelLbs = new ArrayList<>();
 
-            double channelsPerCol = 11;
+            double channelsPerCol = 9;
             int numOfVBox = (int) Math.ceil(quickChannelInfo.size() / channelsPerCol);
 
             int curIndex = 0;
@@ -122,8 +122,8 @@ public class YTUtilityApp extends Application {
                 channelBox.setPadding(new Insets(5, 5, 5, 5));
                 channelBox.setAlignment(Pos.CENTER);
 
-                if (maxColIndex + 11 < quickChannelInfo.size()) {
-                    maxColIndex += 11;
+                if (maxColIndex + channelsPerCol < quickChannelInfo.size()) {
+                    maxColIndex += channelsPerCol;
                 } else {
                     maxColIndex = quickChannelInfo.size();
                 }
