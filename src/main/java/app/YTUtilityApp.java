@@ -35,7 +35,7 @@ public class YTUtilityApp extends Application {
     public static GetChannelResources getChannelResources;
     public final static String resDir = System.getProperty("java.io.tmpdir") + "/YT_Utility";
 
-    public final boolean useBlockPeriod = true; /////
+    public final boolean useBlockPeriod = false; /////
 
     @Override
     public void start(Stage primaryStage) {
